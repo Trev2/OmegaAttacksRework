@@ -1,2 +1,15 @@
-# Omega Attacks Rework
-Reworks various omega attacks so they don't interrupt the flow and allow for faster gameplay.
+# Mod name
+
+Hades II mod allowing to do some super duper thing.
+
+## Features
+
+- Wow.
+- Much cool.
+  - Very doge.
+
+## Install
+
+- Do this.
+- Do that.
+  - Nope, not that.

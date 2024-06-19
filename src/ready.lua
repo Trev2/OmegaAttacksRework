@@ -17,19 +17,18 @@ if config.InstantOmegaCast.Enabled then
 	function sjson_CastWeapon(sjsonData)
 		for _, v in ipairs(sjsonData.Weapons) do
 			if v.Name == "WeaponCast" then
-				v.ForceReleaseOnFire = false
-                v.FullyAutomatic = true
                 v.FireGraphic = "Melinoe_Cast_Fire"
-                v.SwapOnFire = "WeaponCastArm"
-                v.AddOnFire = "null"
-            elseif v.Name = "WeaponCastArm"
-                v.ForceMaxChargeRelease = false
-                v.CancelChargeOnRelease = false
+                v.MinChargeToFire = 0
+            elseif v.Name == "WeaponCastArm" then
+                v.ForceReleaseOnFire = true
                 v.FireOnRelease = false
-                v.AllowExternalForceRelease = true
-                v.LoseControlOnRelease = false
-                v.ChargeTime = 0.0
-                v.MinChargeToFire = 0.0
+                v.MinChargeToFire = 0
+            elseif v.Name == "WeaponAnywhereCast" then
+                v.MinChargeToFire = 0
+                v.RootOwnerWhileFiring = false
+                v.BlockMoveInput = false
+                v.CancelMovement = false
+		        v.ChargeCancelMovement = false
 			end
 		end
 	end

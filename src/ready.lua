@@ -24,7 +24,7 @@ if config.InstantOmegaCast.Enabled then
                 v.FireOnRelease = false
                 v.MinChargeToFire = 0
             elseif v.Name == "WeaponAnywhereCast" then
-                v.MinChargeToFire = 0
+                v.MinChrageToFire = 0
                 v.RootOwnerWhileFiring = false
                 v.BlockMoveInput = false
                 v.CancelMovement = false
@@ -33,3 +33,11 @@ if config.InstantOmegaCast.Enabled then
 		end
 	end
 end
+
+game.WeaponData.WeaponAnywhereCast.ChargeWeaponStages = {
+    { 
+        ManaCost = 15, 
+        Wait = 0.0, 
+        ChannelSlowEventOnStart = true,
+    },
+}

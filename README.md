@@ -10,7 +10,6 @@ Reworks various Omega attacks and weapon properties so they're faster or better,
 - Staff
   - Mel is not as rooted in place when using basic attacks.
   - Omega attack now casts immediately after the final attack in the combo.
-  - Omega attack deals damage in a circle.
   - Omega special always fires as long as you have sufficient mana.
 - Daggers
   - Omega attack now casts immediately before the final attack in the combo without spending mana.

@@ -24,20 +24,44 @@ if config.InstantOmegaCast.Enabled then
                 v.FireOnRelease = false
                 v.MinChargeToFire = 0
             elseif v.Name == "WeaponAnywhereCast" then
-                v.MinChrageToFire = 0
+                v.ForceMaxChargeRelease = true
+                v.MinChargeToFire = 0
                 v.RootOwnerWhileFiring = false
-                v.BlockMoveInput = false
-                v.CancelMovement = false
+		        v.BlockMoveInput = false
+		        v.CancelMovement = false
+		        v.ChargeCancelMovement = false
+            elseif v.Name == "WeaponCastProjectile" then
+                v.ForceMaxChargeRelease = true
+                v.MinChargeToFire = 0
+                v.RootOwnerWhileFiring = false
+		        v.BlockMoveInput = false
+		        v.CancelMovement = false
 		        v.ChargeCancelMovement = false
 			end
 		end
 	end
-end
 
-game.WeaponData.WeaponAnywhereCast.ChargeWeaponStages = {
-    { 
-        ManaCost = 15, 
-        Wait = 0.0, 
-        ChannelSlowEventOnStart = true,
-    },
-}
+    game.WeaponData.WeaponAnywhereCast.ChargeWeaponStages = {
+        { 
+            ManaCost = 15, 
+            Wait = 0.0, 
+            ChannelSlowEventOnStart = false,
+        },
+    }
+    
+    game.WeaponData.WeaponCastProjectile.ChargeWeaponStages = {
+        { 
+            ManaCost = 15, 
+            Wait = 0.0, 
+            ChannelSlowEventOnStart = false,
+        },
+    }
+
+    game.WeaponData.WeaponCastProjectileHades.ChargeWeaponStages = {
+        { 
+            ManaCost = 15, 
+            Wait = 0.0, 
+            ChannelSlowEventOnStart = false,
+        },
+    }
+end

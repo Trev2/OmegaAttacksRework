@@ -6,7 +6,7 @@ schemaVersion = "0.0.1"
 namespace = "TrevTheModder"
 name = "InstantOmegaCast"
 versionNumber = "1.0.0"
-description = "Allows to do some super duper thing."
+description = "Makes the Omega cast instant, accounting for mana."
 websiteUrl = "https://github.com/Trev2/OmegaAttacksRework"
 containsNsfwContent = false
 

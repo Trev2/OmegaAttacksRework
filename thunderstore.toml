@@ -3,11 +3,11 @@ schemaVersion = "0.0.1"
 
 
 [package]
-namespace = "AuthorName"
-name = "ModName"
-versionNumber = "0.0.0"
+namespace = "TrevTheModder"
+name = "InstantOmegaCast"
+versionNumber = "1.0.0"
 description = "Allows to do some super duper thing."
-websiteUrl = "https://github.com/AuthorName/ModName"
+websiteUrl = "https://github.com/Trev2/OmegaAttacksRework"
 containsNsfwContent = false
 
 [package.dependencies]
